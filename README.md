@@ -28,7 +28,7 @@ python3 demo.py --cam 0
 | FSA-Caps (Var)  | 1  | 5.06 | 6.46 | 5.00 |
 | FSA-Caps (1x1 + Var) | 1 | **4.64** | **6.10** | **4.79** |
 
-**Note:** My results are slightly worse than original author's results. For best results, please refer to official repository[1](#acknowledgements).
+**Note:** My results are slightly worse than original author's results. For best results, please refer to official repository<sup>[1](#acknowledgements)</sup>.
 
 
 ## Dependencies
