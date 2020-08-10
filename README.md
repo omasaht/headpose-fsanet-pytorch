@@ -61,7 +61,7 @@ Code has been tested on Ubuntu 18.04
 - **src/demo.py:** Demo script is defined here
 
 ## Download Dataset
-For model training and testing, download the preprocessed dataset from author's official git repository<sup>[1](#acknowledgements)</sup> and place them inside data/ directory. I am only using type1 data for our training and testing. Your dataset hierarchy should look like:
+For model training and testing, download the preprocessed dataset from author's official git repository<sup>[1](#acknowledgements)</sup> and place them inside data/ directory. I am only using type1 data for training and testing. Your dataset hierarchy should look like:
 
 ```
 data/
