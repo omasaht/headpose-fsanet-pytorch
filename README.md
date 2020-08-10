@@ -1,5 +1,5 @@
 # headpose-fsanet-pytorch
-Pytorch implementation of FSA-Net: Learning Fine-Grained Structure Aggregation for Head Pose Estimation from a Single Image\[2]
+Pytorch implementation of FSA-Net: Learning Fine-Grained Structure Aggregation for Head Pose Estimation from a Single Image<sup>[2](#references)</sup>.
 
 ## Demo
 ![demo](extras/headpose-demo.gif?raw=true)
@@ -60,7 +60,7 @@ Code has been tested on Ubuntu 18.04
 - **src/demo.py:** Demo script is defined here
 
 ## Download Dataset
-For model training and testing, download the preprocessed dataset from Author's official git repository\[1] and place them inside data/ directory. We are only using type1 data for our training and testing. Your dataset hierarchy should look like:
+For model training and testing, download the preprocessed dataset from Author's official git repository<sup>[1](#acknowledgements)</sup> and place them inside data/ directory. We are only using type1 data for our training and testing. Your dataset hierarchy should look like:
 
 ```
 data/
