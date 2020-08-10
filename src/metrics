@@ -1,0 +1,9 @@
+Mean Absolute Error Var:-
+Yaw: 5.06, Pitch: 6.46, Roll: 5.00
+Mean Absolute Error 1x1:-
+Yaw: 4.85, Pitch: 6.27, Roll: 4.96
+Mean Absolute Error Fusion:-
+Yaw: 4.64, Pitch: 6.10, Roll: 4.79
+
+
+took approx 6 hours on RTX-2080
