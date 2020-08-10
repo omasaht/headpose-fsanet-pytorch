@@ -1,5 +1,5 @@
 # headpose-fsanet-pytorch
-Pytorch implementation of FSA-Net: Learning Fine-Grained Structure Aggregation for Head Pose Estimation from a Single Image
+Pytorch implementation of FSA-Net: Learning Fine-Grained Structure Aggregation for Head Pose Estimation from a Single Image\[2]
 
 ## Demo
 ![demo](extras/headpose-demo.gif?raw=true)
@@ -20,6 +20,17 @@ python3 demo.py --video /path/to/video.mp4
 python3 demo.py --cam 0
 ``` 
 
+## Results
+
+| Model | Dataset Type | Yaw (MAE) | Pitch (MAE) | Roll (MAE) |
+| --- | --- | --- | --- | --- |
+| FSA-Caps (1x1) | 1  | 4.85 | 6.27 | 4.96 |
+| FSA-Caps (Var)  | 1  | 5.06 | 6.46 | 5.00 |
+| FSA-Caps (1x1 + Var) | 1 | **4.64** | **6.10** | **4.79** |
+
+**Note:** My results are slightly worse than original author's results. For best results, please refer to official repository[1](#acknowledgements).
+
+
 ## Dependencies
 
 ```
@@ -36,6 +47,36 @@ onnxruntime               1.2.0
 You may also need to install jupyter to access notebooks (.ipynb). It is recommended that you use Anaconda to install packages.
 
 Code has been tested on Ubuntu 18.04
+
+## Important Files Overview
+
+- **src/dataset.py:** Our pytorch dataset class is defined here
+- **src/model.py:** Pytorch FSA-Net model is defined here
+- **src/transforms.py:** Augmentation Transforms are defined here
+- **src/1-Explore Dataset.ipynb:** To explore training data, refer to this notebook
+- **src/2-Train Model.ipynb:** For model training, refer to this notebook
+- **src/3-Test Model.ipynb:** For model testing, refer to this notebook
+- **src/4-Export to Onnx.ipynb:** For exporting model, refer to this notebook
+- **src/demo.py:** Demo script is defined here
+
+## Download Dataset
+For model training and testing, download the preprocessed dataset from Author's official git repository\[1] and place them inside data/ directory. We are only using type1 data for our training and testing. Your dataset hierarchy should look like:
+
+```
+data/
+  type1/
+    test/
+      AFLW2000.npz
+    train/
+      AFW.npz
+      AFW_Flip.npz
+      HELEN.npz
+      HELEN_Flip.npz
+      IBUG.npz
+      IBUG_Flip.npz
+      LFPW.npz
+      LFPW_Flip.npz
+```
 
 ## License
 Copyright (c) 2020, Omar Hassan. (MIT License)
