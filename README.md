@@ -82,6 +82,8 @@ data/
 Copyright (c) 2020, Omar Hassan. (MIT License)
 
 ## Acknowledgements
+Special thanks to Mr. Tsun-Yi Yang for providing an excellent code to his paper. Please refer to the official repository to see detailed information and best results regarding the model:
+
 \[1] T. Yang, FSA-Net, (2019), [GitHub repository](https://github.com/shamangary/FSA-Net)
 
 The models are trained and tested with various public datasets which have their own licenses. Please refer to them before using the code
