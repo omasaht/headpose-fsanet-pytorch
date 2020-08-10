@@ -39,6 +39,7 @@ python                    3.7.6
 numpy                     1.18.5
 opencv                    4.2.0
 scipy                     1.5.0
+matplotlib-base           3.2.2
 pytorch                   1.5.1
 torchvision               0.6.1
 onnx                      1.7.0
