@@ -45,6 +45,14 @@ torchvision               0.6.1
 onnx                      1.7.0
 onnxruntime               1.2.0
 ```
+
+
+Installation with pip
+```bash
+pip3 install -r requirements.txt
+```
+
+
 You may also need to install jupyter to access notebooks (.ipynb). It is recommended that you use Anaconda to install packages.
 
 Code has been tested on Ubuntu 18.04
